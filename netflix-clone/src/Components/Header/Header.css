@@ -1,0 +1,63 @@
+/* Outer header */
+.header_outer_container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: rgba(20, 20, 20, 0.9); /* transparent black */
+  color: white;
+  transition: all 0.5s ease-in;
+  z-index: 1000;
+}
+
+/* Inner container */
+.header_container {
+  width: 95%;
+  display: flex;
+  justify-content: space-between; /* left items and right items */
+  align-items: center;
+}
+
+/* Left section */
+.header_left ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header_left li {
+  margin-left: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header_left li:first-child {
+  margin-left: 0; /* logo shouldn’t have left margin */
+}
+
+.header_left li:hover {
+  color: #b3b3b3; /* Netflix hover effect */
+}
+
+/* Right section */
+.header_right ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header_right li {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.header_right li svg {
+  font-size: 28px; /* make MUI icons bigger */
+}
